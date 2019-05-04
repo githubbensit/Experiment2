@@ -1,0 +1,90 @@
+//Problem 3 Experiment 2
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+
+	int X, Y;
+	double V, Z;
+
+	Z = 2.5;
+
+	cout << " Enter value of x" <<endl;
+	cin >> X;
+	cout << " " << endl;
+
+	cout << " Enter value of y" <<endl;
+	cin >> Y;
+	cout << " " << endl;
+
+
+	if ( X > 0 && X < 3 )
+	{
+		switch (X)
+		{
+		case 1:
+			if ( Y > 1 && Y < 5 )
+			{
+				V = X * Y * Z;
+				cout << " V = ";
+				cout<<""<<endl;
+				cout << V;
+				cout<<""<<endl;
+				cout <<"Formula used is "<< "	V = X * Y * Z " <<endl;
+				cout<<""<<endl;
+				
+			}
+			else
+			{
+				V = (( X + Y ) / Z );
+				cout << " V = ";
+				cout<<""<<endl;
+				cout << V;
+				cout<<""<<endl;
+				cout <<"Formula used is "<< "V = (( X + Y ) / Z  " <<endl;
+				cout<<""<<endl;
+				
+				
+			}
+			break;
+		case 2:
+			if (Y <= 5)
+			{
+				V = ( X - ( sqrt ( Y + Z )));
+				cout << " V = ";
+				cout<<""<<endl;
+				cout << V;
+				cout<<""<<endl;
+				cout <<"Formula used is "<< "V = ( X - ( sqrt ( Y + Z )))  " <<endl;
+				cout<<""<<endl;
+				
+			}
+			else
+			{
+				V = (abs((X- Y ) / Z));
+				cout << " V = ";
+				cout<<""<<endl;
+				cout << V;
+				cout<<""<<endl;
+				cout <<"Formula used is "<< "	V = (abs((X- Y ) / Z)) " <<endl;
+				
+			}
+			break;
+		}
+	}
+	else
+	{
+		V = X + Y + Z;
+
+		cout << " V = ";
+		cout << V;
+	}
+
+	_getch();
+	return 0;
+}
+

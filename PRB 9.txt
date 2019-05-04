@@ -1,0 +1,37 @@
+//Problem 9 Experiment 2
+
+#include <iostream>
+#include <string.h>
+#include <math.h>
+#include <stdio.h>#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	cout << " " << endl;
+	cout << " Problem 9, Experiment 2" << endl;
+	cout << ". . . . . . . . . . . . . ." << endl;
+	
+
+	int a= 0, b = 0;
+
+	cout << " Enter Row: ";
+	cin >> a;
+	cout << " Enter Columns ";
+	cin >>b;
+
+	for (int h = 0; h < a; h++)
+	{
+		cout << endl;
+
+		for (int h = 0; h < b; h++)
+		{
+			cout << " * ";
+		}
+	}
+
+	_getch();
+	return 0;
+}

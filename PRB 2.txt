@@ -1,0 +1,48 @@
+//Problem 2 Experiment 2
+
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	int a,b,c,d;
+	double charge;
+	char choice;
+	c = 35;
+	
+	cout <<"Input gallon used: " << endl;
+	cin >> a;
+	cout <<""<<endl;
+	cout <<"Are there any late charges? [Y]es or [N]o" <<endl;
+	cin >> choice;
+
+	switch (choice)
+	{
+		case 'Y':
+		case 'y':
+			cout <<"Input how many months due: " <<endl;
+			cin >>b;
+			cout <<""<<endl;
+			cout <<"Input total amount of previous bill/s: " <<endl;
+			cin >>d;
+			cout <<""<<endl;
+			cout <<"Totalwater bill is: "<< endl;
+			cout <<( (c+(a*1.1)+(b*20)+d))<<endl;
+			break;
+		case 'N':
+		case 'n':
+			cout <<"Total water bill is: " <<endl;
+	 		cout << (c+(a*1.1)) << endl;
+			break;
+		default:
+			cout<< "Must enter valid amount: " <<endl;
+			
+			
+	}
+	
+	 _getch ();
+	 return 0;
+	
+}

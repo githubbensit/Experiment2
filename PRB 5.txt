@@ -1,0 +1,35 @@
+//Problem 5 Experiment 2
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int a=1;
+
+	cout << " " << endl;
+	cout << "Problem 5, Experiment 2 " <<endl;
+	cout << " " << endl;
+
+	cout << " Type any key to start counting" <<endl;
+	cout << " ";
+	
+	cin >> a;
+	cout << " " << endl;
+	for (int h = 1; h<= 21; h++) {
+
+		if (h > 10 )
+		{
+			cout << a << ", ";
+			a = a + 2;
+		}
+		else 
+		{
+			cout << a << ", ";
+			a++;
+		}
+	}
+	_getch();
+	return 0;
+}

@@ -1,0 +1,29 @@
+//Problem 8, Experiment 2
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	
+	cout << " Problem 8, Experiment 2" << endl;
+	cout << " " << endl;
+
+	int a;
+
+	cout << " Enter a number for it's Multiplication Table" << endl;
+	cin >> a;
+	cout << " " << endl;
+	cout << " Multiplication Table of: " << a << endl;
+	cout << " " << endl;
+
+	for (int h = 1; h <= 20; h++)
+	{
+		cout << " ";
+		cout << a << " * " << h << " = " << a * h << endl;
+	}
+
+	_getch();
+	return 0;
+}

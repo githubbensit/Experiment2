@@ -1,0 +1,42 @@
+//Problem 7 Experiment 2
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	cout << " " << endl;
+	cout << " Problem 7, Experiment 2 " << endl;
+
+
+	x:
+	int a,b;
+	b = 0;
+
+	cout << " Enter any number " <<endl;
+	cin >> a;
+	cout << " ";
+	cout << " " << endl;
+	if (a > 0 )
+	{
+
+	for (int h = a; h >= 1; h--)
+	{
+		b = b + h;
+	}
+
+	cout << " The sum of all whole numbers from 1 to " << a << " is: " << b << endl;
+	cout << " " << endl;
+	goto x;
+	}
+	
+	else 
+	cout <<"Thank you" << endl;
+	
+
+	
+	
+	_getch();
+	return 0;
+}

@@ -1,0 +1,39 @@
+//Problem 6 Experiment 2
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int h, h1= 0, h2= 1, a;
+
+	cout << " " << endl;
+	cout << " Problem 6, Experiment 2" <<endl;
+	cout << " " << endl;
+	cout << "The Fibonacci Sequence are: ";
+
+	for (h = 1; h <= 23;++h)
+	{
+		if (h == 1)
+		{
+			cout << h1 << " , ";
+		}
+		else if (h == 2)
+		{
+			cout << h2 << " , ";
+		}
+		else
+		{
+			a	 = h1 + h2;
+
+			h1 = h2;
+			h2 = a;
+
+			cout << a << " , ";
+		}
+	}
+
+	_getch();
+	return 0;
+}

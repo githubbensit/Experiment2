@@ -1,0 +1,53 @@
+//Problem 1 Experiment 2
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	int a, b, package, A, B, C;
+	
+	
+	cout <<"Subscription Packagesare the following: "<< endl;
+	cout <<""<< endl;
+	cout <<"Package A: P995/mo" << endl;
+	cout <<""<< endl;
+	cout <<"Package B: P1495/mo" << endl;
+	cout <<""<< endl;
+	cout <<"Package C: P1995/mo" <<endl;
+	cout <<""<< endl;
+	cout <<"Input package price " <<endl;
+	cin >>package;
+	
+	if (package == 995)
+{	
+	cout <<"You Subscribed to Package A " <<endl; 
+	cout <<""<<endl;
+	cout <<"Input Additional Hours " << endl;
+	cin >> a;
+	cout <<""<<endl;
+	cout <<"total amount due is: "<< (995 +(a*20)) <<endl;
+}
+	
+	else if (package == 1495)
+{	
+	cout <<"You Subscribed to Package B " <<endl; 
+	cout <<""<<endl;
+	cout <<"Input Additional Hours " << endl;
+	cin >> b;
+	cout <<""<<endl;
+	cout <<"total amount due is: "<< (1495 +(b*10)) <<endl;
+	}
+	
+	else if (package == 1995)
+	{
+		cout <<"You Subscribed to Package C " <<endl; 
+		cout <<""<<endl;
+	    cout <<"total amount due is: "<< (1995) <<endl;
+}
+ else
+ cout <<"You're not subscribed to any of our Packages" << endl;
+
+_getch ();
+return 0;
+}
